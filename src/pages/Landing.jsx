@@ -1,6 +1,6 @@
 import { FeaturedProducts, Hero } from "../components";
 
-import { customFetch } from "../Utils/Index";
+import { customFetch } from "../Utils";
 const url = "/products?featured=true";
 
 export const loader = async () => {
