@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { formatPrice, customFetch, generateAmountOptions } from "../utils";
+import { formatPrice, customFetch, generateAmountOptions } from "../Utils";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -79,9 +79,8 @@ const SingleProduct = () => {
                   <button
                     key={color}
                     type="button"
-                    className={`badge w-6 h-6 mr-2 ${
-                      color === productColor && "border-2 border-secondary"
-                    }`}
+                    className={`badge w-6 h-6 mr-2 ${color === productColor && "border-2 border-secondary"
+                      }`}
                     style={{ backgroundColor: color }}
                     onClick={() => setProductColor(color)}
                   ></button>
