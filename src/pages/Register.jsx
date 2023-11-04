@@ -1,6 +1,6 @@
 import { FormInput, SubmitBtn } from "../components";
 import { Form, Link, redirect } from "react-router-dom";
-import { customFetch } from "../utils";
+import { customFetch } from "../Utils";
 import { toast } from "react-toastify";
 
 export const action = async ({ request }) => {
